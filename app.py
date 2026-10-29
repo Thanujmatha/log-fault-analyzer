@@ -15,7 +15,7 @@ st.set_page_config(page_title="Intelligent Log Fault Analyzer", page_icon="🛠�
 st.title("🛠️ Intelligent Log Fault Analyzer")
 st.caption("Log parsing • Fault detection • Anomaly screening • Incident correlation • Evidence-based hypotheses")
 
-SAMPLE_PATH = Path(__file__).parent / "data" / "sample_logs.log"
+SAMPLE_PATH = Path(__file__).parent / "sample_logs.log"
 SAMPLE_LOGS = SAMPLE_PATH.read_text(encoding="utf-8") if SAMPLE_PATH.exists() else ""
 
 with st.sidebar:
